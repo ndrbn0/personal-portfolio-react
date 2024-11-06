@@ -1,0 +1,95 @@
+#intro {
+  height: calc(100vh - 4rem);
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.introContent {
+  height: 100vh;
+  width: 100vw; /* Adjusted to prevent overflow */
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hi {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+
+.introName {
+  color: rgb(159, 202, 245);
+}
+
+.introPara {
+  font-size: medium;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.hireMeContainer {
+  display: flex;
+  margin-top: auto;
+}
+
+.btn {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+}
+
+.btnImg {
+  width: 150px;
+  height: 150px;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 840px) {
+  .bg {
+    right: -10vw;
+  }
+
+  .introContent {
+    font-size: 10vw;
+  }
+
+  .hi {
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bg {
+    right: -10vw;
+  }
+
+  .introContent {
+    max-width: 80vw; /* Avoids overflow on smaller screens */
+    font-size: 10vw;
+  }
+
+  .hi {
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bg {
+    right: -20vw;
+  }
+}
