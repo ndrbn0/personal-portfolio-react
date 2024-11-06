@@ -16,6 +16,7 @@ const Works = () => {
         <img src={ArtGallery} alt="Art Gallery App" class="worksImg" />
         <img src={Wormhole} alt="Wormhole App" class="worksImg" />
       </div>
+      <button class="workBtn">See More</button>
     </section>
   );
 };
