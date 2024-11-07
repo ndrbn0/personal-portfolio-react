@@ -6,34 +6,34 @@ import AppDesign from "../../assets/AppDesign.png";
 
 const Skills = () => {
   return (
-    <section id="skills">
-      <span class="skillTitle">What I do</span>
-      <span class="skillDesc">
-        I am a passionate and skilled web designer a passionate and skilled web
-        designer a passionate and skilled web designer a passionate and skilled
-        web designer a passionate and skilled web designer a passionate and
-        skilled web designer
-      </span>
-      <div class="skillBars">
-        <div class="skillBar">
-          <img src={UIDesign} alt="" class="skillBarImg" />
-          <div class="skillBarText">
-            <h2>UX/UI Design</h2>
-            <p>This is a demonstration</p>
+    <section id="skills" aria-labelledby="skillTitle">
+      <h2 id="skillTitle" className="skillTitle">
+        What I Do
+      </h2>
+      <p className="skillDesc">
+        I am a passionate and skilled web designer, dedicated to bringing your
+        ideas to life with a meticulous attention to detail.
+      </p>
+      <div className="skillBars">
+        <div className="skillBar">
+          <img src={UIDesign} alt="UX/UI Design icon" className="skillBarImg" />
+          <div className="skillBarText">
+            <h3>UX/UI Design</h3>
+            <p>This is a demonstration of my skills in UX/UI design.</p>
           </div>
         </div>
-        <div class="skillBar">
-          <img src={WebDesign} alt="" class="skillBarImg" />
-          <div class="skillBarText">
-            <h2>Web Design</h2>
-            <p>This is a demonstration</p>
+        <div className="skillBar">
+          <img src={WebDesign} alt="Web Design icon" className="skillBarImg" />
+          <div className="skillBarText">
+            <h3>Web Design</h3>
+            <p>This is a demonstration of my skills in web design.</p>
           </div>
         </div>
-        <div class="skillBar">
-          <img src={AppDesign} alt="" class="skillBarImg" />
-          <div class="skillBarText">
-            <h2>App Design</h2>
-            <p>This is a demonstration</p>
+        <div className="skillBar">
+          <img src={AppDesign} alt="App Design icon" className="skillBarImg" />
+          <div className="skillBarText">
+            <h3>App Design</h3>
+            <p>This is a demonstration of my skills in app design.</p>
           </div>
         </div>
       </div>

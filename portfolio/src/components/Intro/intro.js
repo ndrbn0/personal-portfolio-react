@@ -1,24 +1,25 @@
 import React from "react";
-import "./intro.css";
 import { Link } from "react-scroll";
+import "./intro.css";
 import hireMe from "../../assets/HireMe.png";
 
 const Intro = () => {
   return (
-    <section id="intro">
+    <section id="intro" aria-labelledby="introTitle">
       <div className="introContent">
-        <span className="hi">Hi,</span>
-        <span className="introText">
-          I'm <span className="introName">Andrea</span>
-          <br /> Bruni form Italy
-        </span>
+        <h1 className="hi" id="introTitle">
+          Hi,
+        </h1>
+        <div className="introText">
+          I'm <span className="introName">Andrea</span> Bruni from Italy
+        </div>
         <p className="introPara">
-          skilled web developer with passion for customers happiness,
-          <br /> who will help you to fullfill all the wishes you have
+          A skilled web developer with a passion for customer satisfaction,
+          ready to fulfill your design and development needs.
         </p>
-        <Link>
+        <Link to="contact" spy smooth offset={-70} duration={500}>
           <div className="hireMeContainer">
-            <button className="btn">
+            <button className="btn" aria-label="Hire Me Button">
               <img src={hireMe} alt="Hire Me" className="btnImg" />
             </button>
           </div>

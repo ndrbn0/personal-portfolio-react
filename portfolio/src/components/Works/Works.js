@@ -6,17 +6,33 @@ import Wormhole from "../../assets/Wormhole.gif";
 
 const Works = () => {
   return (
-    <section id="works">
-      <h2 className="worksTitle">My Portfolio</h2>
-      <span className="worksDesc">
-        I take pride in paying attention to the smallest details and
-      </span>
+    <section id="works" aria-labelledby="worksTitle">
+      <h2 id="worksTitle" className="worksTitle">
+        My Portfolio
+      </h2>
+      <p className="worksDesc">
+        I take pride in paying attention to the smallest details in my projects.
+      </p>
       <div className="worksImgs">
-        <img src={FlavionLogo} alt="Flavion App" class="worksImg" />
-        <img src={ArtGallery} alt="Art Gallery App" class="worksImg" />
-        <img src={Wormhole} alt="Wormhole App" class="worksImg" />
+        <img
+          src={FlavionLogo}
+          alt="Flavion App project thumbnail"
+          className="worksImg"
+        />
+        <img
+          src={ArtGallery}
+          alt="Art Gallery App project thumbnail"
+          className="worksImg"
+        />
+        <img
+          src={Wormhole}
+          alt="Wormhole App project thumbnail"
+          className="worksImg"
+        />
       </div>
-      <button class="workBtn">See More</button>
+      <button className="workBtn" aria-label="See More Projects">
+        See More
+      </button>
     </section>
   );
 };

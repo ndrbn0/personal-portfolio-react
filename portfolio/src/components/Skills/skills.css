@@ -6,13 +6,15 @@
   width: 100%;
   max-width: 65rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem 2rem; /* Increased padding for visibility */
+  background: rgb(30, 30, 30); /* Light background to differentiate sections */
+  box-sizing: border-box;
 }
 
 .skillTitle {
   font-size: 2rem;
   font-weight: 600;
-  margin: 2rem 0;
+  margin-top: -4rem;
 }
 
 .skillDesc {
@@ -20,6 +22,7 @@
   font-size: 1rem;
   max-width: 50rem;
   padding: 0.5rem;
+  margin-top: 1rem;
 }
 
 .skillBars {
@@ -27,6 +30,7 @@
   max-width: 80%;
   text-align: left;
   margin-top: 2rem;
+  margin-bottom: 7rem;
 }
 
 .skillBar {

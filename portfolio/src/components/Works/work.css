@@ -1,6 +1,6 @@
 #works {
   margin: 0 auto;
-  min-height: calc(100vw - 4rem);
+  min-height: calc(100vh - 4rem); /* Adjust for the navbar height */
   width: 100%;
   max-width: 60rem;
   display: flex;
@@ -8,18 +8,25 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 1rem;
+  padding: 4rem 2rem; /* Added padding for better section visibility */
+  background: rgb(30, 30, 30); /* Light background for distinction */
+  box-sizing: border-box;
 }
 
 .worksTitle {
   margin: 1rem 0;
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
 }
 
-.WorksDesc {
+.worksDesc {
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.1rem;
   max-width: 45rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  color: #fff;
 }
 
 .worksImgs {
@@ -27,29 +34,88 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100vw;
+  gap: 1rem;
+  width: 100%;
   max-width: 65rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
 }
 
 .worksImg {
   object-fit: cover;
   height: 15rem;
   margin: 0.5rem;
+  border-radius: 0.5rem; /* Soft corners for images */
+  transition: transform 0.3s ease;
+}
+
+.worksImg:hover {
+  transform: scale(1.05); /* Subtle zoom effect */
 }
 
 .workBtn {
-  margin: 3rem 0;
-  padding: 0.5rem 2.5rem;
+  margin: 2.5rem 0;
+  padding: 0.7rem 2.5rem;
   border: none;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(30, 30, 30, 0.5));
-  font-size: 1rem;
-  color: white;
+  font-size: 1.1rem;
+  color: #fff;
   cursor: pointer;
+  transition: background 0.3s;
+}
+
+.workBtn:hover {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(30, 30, 30, 0.7)
+  );
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .worksTitle {
+    font-size: 2rem;
+  }
+
+  .worksDesc {
+    font-size: 1rem;
+    max-width: 80vw;
+  }
+
+  .workBtn {
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 585px) {
   .worksImg {
     height: 48vw;
+  }
+
+  .worksDesc {
+    font-size: 0.95rem;
+  }
+
+  .workBtn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .worksTitle {
+    font-size: 1.75rem;
+  }
+
+  .worksDesc {
+    font-size: 0.9rem;
+  }
+
+  .workBtn {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
   }
 }
