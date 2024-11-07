@@ -1,9 +1,9 @@
-import Contact from "./components/Contact/contact";
-import Intro from "./components/Intro/intro";
-import Navbar from "./components/NavBar/navbar";
-import Skills from "./components/Skills/skills";
+import Contact from "./components/Contact/Contact";
+import Intro from "./components/Intro/Intro";
+import Navbar from "./components/NavBar/Navbar";
+import Skills from "./components/Skills/Skills";
 import Works from "./components/Works/Works";
-import Footer from "./components/Footer/footer";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
