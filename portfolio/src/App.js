@@ -1,5 +1,5 @@
 import { Contact } from "./components/Contact/Contact";
-import { Intro } from "./components/Intro/Intro";
+import { Intro } from "./components/About/Intro";
 import { Navbar } from "./components/NavBar/Navbar";
 import { Skills } from "./components/Skills/Skills";
 import { Works } from "./components/Works/Works";
