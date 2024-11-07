@@ -93,6 +93,7 @@
 }
 
 .mobMenu {
+  margin-right: -2.5rem;
   width: 5rem;
   display: none;
   object-fit: cover;
