@@ -1,37 +1,37 @@
+/* General Page Layout Fixes */
 #contactPage {
   min-height: calc(100vh - 4rem); /* Ensure full view height excluding navbar */
-  width: 100vw;
-  max-width: 60rem;
-  margin: 0 auto;
-  padding: 2rem; /* Add padding for spacing */
+  width: 90vw;
+  max-width: 55rem;
+  padding: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  transition: background 0.5s ease-in-out; /* Smooth background transition */
+  transition: background 0.5s ease-in-out;
+  margin: 0 auto;
 }
 
 .contactPageTitle {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #fff; /* Ensure title is visible */
+  color: #fff;
 }
 
 .clientDesc {
   font-weight: 300;
   font-size: 1rem;
-  color: #fff; /* Ensure description text is visible */
+  color: #fff;
 }
 
 .clientImgs {
-  margin: 2rem 0; /* Increased margin to space out content */
+  margin: 2rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem; /* Added gap between images */
+  gap: 1rem;
 }
 
 .clientImg {
@@ -40,23 +40,23 @@
   min-width: 9rem;
   margin: auto;
   padding: 0.25rem;
-  border-radius: 8px; /* Rounded corners for the client logos */
-  transition: transform 0.3s ease; /* Hover effect for images */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
 .clientImg:hover {
-  transform: scale(1.05); /* Subtle zoom on hover */
+  transform: scale(1.05);
 }
 
 #clients {
-  padding: 4rem 0; /* Padding to space the client section better */
+  padding: 4rem 0;
 }
 
 .contactDesc {
   padding: 1rem;
-  font-size: 1.1rem; /* Increased font size for readability */
+  font-size: 1.1rem;
   font-weight: 300;
-  color: #ddd; /* Light text for the description */
+  color: #ddd;
 }
 
 .contactForm {
@@ -88,12 +88,12 @@
 .email:focus,
 .msg:focus {
   outline: none;
-  border: 2px solid #1658dc; /* Add a highlight effect on focus */
+  border: 2px solid #1658dc;
 }
 
 .submitBtn {
-  background: #1658dc; /* Accent color for button */
-  color: #fff; /* White text on button */
+  background: #1658dc;
+  color: #fff;
   border: none;
   border-radius: 0.5rem;
   margin: 2rem;
@@ -103,7 +103,7 @@
 }
 
 .submitBtn:hover {
-  background: #124a91; /* Darker shade on hover */
+  background: #124a91;
 }
 
 .links {
@@ -122,5 +122,76 @@
 }
 
 .link:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  #contactPage {
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .clientImgs {
+    margin: 1.5rem 0;
+  }
+
+  .contactForm {
+    margin: 1rem;
+  }
+
+  .name,
+  .email,
+  .msg {
+    margin: 0.5rem 0;
+    padding: 0.7rem 1rem;
+  }
+
+  .submitBtn {
+    margin: 1rem;
+    padding: 0.75rem 2.5rem;
+  }
+
+  .contactDesc {
+    font-size: 1rem;
+  }
+
+  .clientImg {
+    width: 45%;
+    margin-bottom: 1rem;
+  }
+
+  .links {
+    margin-top: 1rem;
+  }
+
+  .link {
+    height: 2rem;
+    width: 2rem;
+    margin: 0 0.5rem;
+  }
+}
+
+/* For very small screens like mobile phones in portrait mode */
+@media (max-width: 480px) {
+  #contactPage {
+    padding: 1rem;
+  }
+
+  .contactForm {
+    margin: 1rem; /* Further reduce margin on form */
+  }
+
+  .name,
+  .email,
+  .msg {
+    font-size: 0.9rem; /* Reduce font size on smaller screens */
+  }
+
+  .clientImg {
+    width: 90%; /* Use nearly full width on very small screens */
+  }
+
+  .submitBtn {
+    padding: 0.75rem 2rem; /* Adjust button padding */
+  }
 }

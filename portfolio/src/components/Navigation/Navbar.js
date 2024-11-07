@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./navbar.css";
 import { Link } from "react-scroll";
 import logo from "../../assets/logo.gif";
@@ -7,6 +7,28 @@ import menu from "../../assets/menu.png";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const menuRef = useRef(null);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        !event.target.closest(".mobMenu")
+      ) {
+        setShowMenu(false);
+      }
+    };
+
+    // Attach event listener
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="navbar">
@@ -75,7 +97,11 @@ const Navbar = () => {
       />
 
       {/* Mobile Navigation Menu */}
-      <div className="navMenu" style={{ display: showMenu ? "flex" : "none" }}>
+      <div
+        className="navMenu"
+        ref={menuRef}
+        style={{ display: showMenu ? "flex" : "none" }}
+      >
         <Link
           activeClass="active"
           to="intro"
@@ -102,6 +128,7 @@ const Navbar = () => {
         </Link>
         <Link
           to="works"
+          activeClass="active"
           spy={true}
           offset={5}
           smooth={true}
@@ -113,6 +140,7 @@ const Navbar = () => {
         </Link>
         <Link
           to="clients"
+          activeClass="active"
           spy={true}
           offset={-12}
           smooth={true}
@@ -124,6 +152,7 @@ const Navbar = () => {
         </Link>
         <Link
           to="contact"
+          activeClass="active"
           spy={true}
           offset={-12}
           smooth={true}
@@ -137,4 +166,5 @@ const Navbar = () => {
     </nav>
   );
 };
+
 export default Navbar;
