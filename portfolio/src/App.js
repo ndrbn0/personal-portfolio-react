@@ -1,8 +1,9 @@
 import Contact from "./components/Contact/Contact";
-import Intro from "./components/Intro/intro";
-import Navbar from "./components/NavBar/navbar";
+import Intro from "./components/Intro/Intro";
+import Navbar from "./components/NavBar/Navbar";
 import Skills from "./components/Skills/Skills";
 import Works from "./components/Works/Works";
+import Footer from "./components/Footer/footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Skills />
       <Works />
       <Contact />
+      <Footer />
     </div>
   );
 }

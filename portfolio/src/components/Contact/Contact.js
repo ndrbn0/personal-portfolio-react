@@ -2,9 +2,9 @@ import React from "react";
 import "./contact.css";
 import FB from "../../assets/facebook.png";
 import FBIcon from "../../assets/FBIcon.png";
-import Insta from "../../assets/Insta.png";
-import GH from "../../assets/GitHub.png";
-import IN from "../../assets/IN.png";
+import InstaIcon from "../../assets/Insta.png";
+import GitHubIcon from "../../assets/GitHub.png";
+import LinkedInIcon from "../../assets/IN.png";
 
 const Contact = () => {
   return (
@@ -34,16 +34,16 @@ const Contact = () => {
             name="message"
             className="msg"
             rows="5"
-            placeholder="Your Message..."
+            placeholder="Your Message"
           ></textarea>
           <button type="submit" className="submitBtn" value="send">
             Submit
           </button>
           <div className="links">
-            <img src={FBIcon} alt="" className="link" />
-            <img src={Insta} alt="" className="link" />
-            <img src={GH} alt="" className="link" />
-            <img src={IN} alt="" className="link" />
+            <img src={FBIcon} alt="Facebook" className="link" />
+            <img src={InstaIcon} alt="Instagram" className="link" />
+            <img src={GitHubIcon} alt="GitHub" className="link" />
+            <img src={LinkedInIcon} alt="LinkedIn" className="link" />
           </div>
         </form>
       </div>
