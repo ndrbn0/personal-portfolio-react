@@ -72,6 +72,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .skillTitle {
+    font-size: 2rem;
+  }
+
   .skillBars {
     flex-direction: column;
     align-items: center;
