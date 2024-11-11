@@ -6,9 +6,10 @@
   width: 100%;
   max-width: 65rem;
   margin: 0 auto;
-  padding: 4rem 2rem; /* Increased padding for visibility */
-  background: rgb(30, 30, 30); /* Light background to differentiate sections */
+  padding: 4rem 2rem;
+  background: rgb(30, 30, 30);
   box-sizing: border-box;
+  margin-top: 5rem;
 }
 
 .skillTitle {
@@ -18,56 +19,77 @@
 }
 
 .skillDesc {
-  font-weight: 400;
   font-size: 1rem;
-  max-width: 50rem;
-  padding: 0.5rem;
-  margin-top: 1rem;
+  max-width: 800px;
+  line-height: 1.5;
+  margin: 1.5rem 0;
+  font-weight: 300;
 }
 
 .skillBars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  max-width: 80%;
-  text-align: left;
-  margin-top: 2rem;
-  margin-bottom: 7rem;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .skillBar {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 0.5rem;
+  flex-basis: 70%;
+  margin-bottom: 3rem;
   background: linear-gradient(to bottom, rgb(30, 30, 30), rgb(50, 50, 50));
+  border-radius: 3vw;
+  padding: 1rem;
 }
 
 .skillBarImg {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   margin-right: 1rem;
 }
 
-.skillBarText > p {
+.skillBarText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.skillBarText h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.skillBarText p {
   font-size: 1rem;
-  font-weight: 300;
+  color: rgb(180, 180, 180);
 }
 
-@media screen and (max-width: 720px) {
-  .skillTitle {
-    font-size: 1.5rem;
+@media screen and (max-width: 768px) {
+  .skillBars {
+    flex-direction: column;
+    align-items: center;
   }
-  .skillBarText > p {
-    font-size: 0.9rem;
-  }
-}
 
-@media screen and (max-width: 480px) {
+  .skillBar {
+    flex-basis: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
   .skillBarImg {
-    width: 2rem;
-    height: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
   }
-  .skillBarText > p {
-    font-size: 0.8rem;
+
+  .skillBarText {
+    padding: 0.5rem 0;
   }
 }

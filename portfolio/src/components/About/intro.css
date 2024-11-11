@@ -1,172 +1,89 @@
 #intro {
-  height: calc(100vh - 4rem); /* Adjusted to account for the navbar height */
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem 0;
-  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(30, 30, 30); /* Light background for better contrast */
-  box-sizing: border-box; /* Ensure padding is included in the height */
-}
-
-.bg {
-  position: absolute;
-  top: -4rem;
-  right: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
+  padding: 60px 20px;
+  background-color: rgb(30, 30, 30);
+  min-height: 100vh;
 }
 
 .introContent {
-  max-width: 900px;
-  width: 100%;
-  padding: 2rem;
-  font-size: 2.5rem;
-  font-weight: 700;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: left;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 40px;
 }
 
-.hi {
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
+.textContainer {
+  flex: 1;
+  padding-right: 30px;
 }
 
 .introText {
-  font-size: 2.5rem;
-  line-height: 1.2;
+  font-size: 1.8rem;
+  color: #fff;
 }
 
 .introName {
-  color: rgb(159, 202, 245);
+  font-weight: 700;
+  color: #1e90ff;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  box-shadow: 0 0 20px rgba(30, 30, 30, 0.1);
 }
 
 .introPara {
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  line-height: 1.5;
-  margin: 1.5rem 0;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff;
+  margin-top: 40px;
+  max-width: 800px;
+  line-height: 1.6;
 }
 
-.hireMeContainer {
-  margin-top: 2rem;
-}
-
-.btn {
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  display: flex;
-}
-
-.btnImg {
-  width: 120px;
-  height: 120px;
-  transition: transform 0.3s;
-}
-
-.btn:hover .btnImg {
-  transform: scale(1.1);
-}
-
-/* Responsive styling */
-@media screen and (max-width: 840px) {
+@media (max-width: 768px) {
   .introContent {
-    font-size: 6vw;
+    flex-direction: column;
     text-align: center;
+    gap: 30px;
+  }
+
+  .textContainer {
+    padding-right: 0;
+  }
+
+  .profilePic {
+    width: 180px;
+    height: 180px;
   }
 
   .hi {
-    font-size: 3vw;
+    font-size: 3rem;
   }
 
   .introText {
-    font-size: 6vw;
+    font-size: 1.4rem;
   }
 
   .introPara {
-    font-size: 1rem;
-  }
-
-  .btnImg {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .introContent {
-    font-size: 5.5vw;
-  }
-
-  .hi {
-    font-size: 3.5vw;
-  }
-
-  .introPara {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-
-  .btnImg {
-    width: 90px;
-    height: 90px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .introContent {
-    font-size: 5vw;
-    padding: 1.5rem;
-  }
-
-  .hi {
-    font-size: 4vw;
-  }
-
-  .introText {
-    font-size: 5vw;
-  }
-
-  .introPara {
-    font-size: 0.85rem;
-  }
-
-  .btnImg {
-    width: 80px;
-    height: 80px;
-  }
-}
-
-@media screen and (max-width: 344px) {
-  .introContent {
-    font-size: 4.5vw;
-    padding: 1rem;
-  }
-
-  .hi {
-    font-size: 3.8vw;
-  }
-
-  .introText {
-    font-size: 4.5vw;
-  }
-
-  .introPara {
-    font-size: 0.8rem;
-  }
-
-  .btnImg {
-    width: 70px;
-    height: 70px;
+    font-size: 1.2rem;
+    margin-top: 30px;
   }
 }

@@ -9,7 +9,6 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);
 
-  // Close menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -21,10 +20,8 @@ const Navbar = () => {
       }
     };
 
-    // Attach event listener
     document.addEventListener("mousedown", handleClickOutside);
 
-    // Cleanup event listener on component unmount
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -35,7 +32,6 @@ const Navbar = () => {
       <img src={logo} alt="Logo" className="logo" />
       <div className="desktopMenu">
         <Link
-          activeClass="active"
           to="intro"
           spy={true}
           offset={-170}
@@ -88,7 +84,6 @@ const Navbar = () => {
         <img src={contactImg} alt="Button Icon" className="desktopMenuImg" />
       </button>
 
-      {/* Mobile Menu Icon */}
       <img
         src={menu}
         alt="Menu Icon"
@@ -96,7 +91,6 @@ const Navbar = () => {
         onClick={() => setShowMenu(!showMenu)}
       />
 
-      {/* Mobile Navigation Menu */}
       <div
         className="navMenu"
         ref={menuRef}
