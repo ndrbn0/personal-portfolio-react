@@ -7,6 +7,7 @@ const Intro = () => {
     <section id="intro" aria-labelledby="introTitle">
       <div className="introContent">
         <div className="textContainer">
+          <h1 className="role">Frontend Developer</h1>
           <div className="introText">
             I'm <span className="introName">Andrea</span> Bruni from Italy
           </div>

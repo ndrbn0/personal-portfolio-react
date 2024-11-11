@@ -23,6 +23,10 @@
   padding-right: 30px;
 }
 
+.role {
+  line-height: 2;
+}
+
 .introText {
   font-size: 1.8rem;
   color: #fff;
@@ -41,21 +45,19 @@
 }
 
 .profilePic {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  border-radius: 2vw;
   object-fit: cover;
-  border: 2px solid #ddd;
-  box-shadow: 0 0 20px rgba(30, 30, 30, 0.1);
+  border: none;
 }
 
 .introPara {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #fff;
   margin-top: 40px;
   max-width: 800px;
-  line-height: 1.6;
 }
 
 @media (max-width: 768px) {
@@ -70,8 +72,8 @@
   }
 
   .profilePic {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
   }
 
   .hi {
