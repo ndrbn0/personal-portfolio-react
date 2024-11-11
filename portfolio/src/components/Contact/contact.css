@@ -36,8 +36,8 @@
 
 .clientImg {
   object-fit: cover;
-  width: 23%;
-  min-width: 9rem;
+  width: 18%; /* Reduce width from 23% to 18% */
+  min-width: 7rem; /* Make the minimum width smaller */
   margin: auto;
   padding: 0.25rem;
   border-radius: 8px;
@@ -156,7 +156,7 @@
   }
 
   .clientImg {
-    width: 45%;
+    width: 40%;
     margin-bottom: 1rem;
   }
 
@@ -188,7 +188,7 @@
   }
 
   .clientImg {
-    width: 90%; /* Use nearly full width on very small screens */
+    width: 80%; /* Use nearly full width on very small screens */
   }
 
   .submitBtn {

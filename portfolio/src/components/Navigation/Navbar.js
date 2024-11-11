@@ -45,7 +45,7 @@ const Navbar = () => {
           to="skills"
           activeClass="active"
           spy={true}
-          offset={-90}
+          offset={-100}
           smooth={true}
           duration={500}
           className="desktopMenuListItem"
