@@ -1,6 +1,6 @@
 #works {
   margin: 0 auto;
-  min-height: calc(100vh - 4rem); /* Adjust for the navbar height */
+  min-height: calc(100vh - 4rem);
   width: 100%;
   max-width: 60rem;
   display: flex;
@@ -8,8 +8,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 4rem 2rem; /* Added padding for better section visibility */
-  background: rgb(30, 30, 30); /* Light background for distinction */
+  padding: 4rem 2rem;
+  background: rgb(30, 30, 30);
   box-sizing: border-box;
 }
 
@@ -43,14 +43,14 @@
 
 .worksImg {
   object-fit: cover;
-  height: 15rem;
+  height: 20rem;
   margin: 0.5rem;
-  border-radius: 0.5rem; /* Soft corners for images */
+  border-radius: 0.5rem;
   transition: transform 0.3s ease;
 }
 
 .worksImg:hover {
-  transform: scale(1.05); /* Subtle zoom effect */
+  transform: scale(1.05);
 }
 
 .workBtn {
@@ -73,7 +73,6 @@
   );
 }
 
-/* Responsive styling */
 @media screen and (max-width: 768px) {
   .worksTitle {
     font-size: 2rem;
@@ -92,7 +91,7 @@
 
 @media screen and (max-width: 585px) {
   .worksImg {
-    height: 48vw;
+    height: 60vw;
   }
 
   .worksDesc {
