@@ -42,8 +42,8 @@
   align-items: center;
   flex-basis: 70%;
   margin-bottom: 3rem;
-  background: linear-gradient(to bottom, rgb(30, 30, 30), rgb(50, 50, 50));
-  border-radius: 3vw;
+  background: linear-gradient(to bottom, rgb(50, 50, 50), rgb(30, 30, 30));
+  border-radius: 20px;
   padding: 1rem;
 }
 
